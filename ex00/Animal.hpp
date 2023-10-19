@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:54:15 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/10/19 17:25:35 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/10/19 23:04:22 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,21 @@
 
 class Animal
 {
-	private:
+	protected:
 		std::string _type;
 
 	public:
+		// constructors
 		Animal();
 		Animal(std::string type);
 		Animal(const Animal &other);
 		Animal &operator=(const Animal &other);
-		~Animal();
+		virtual ~Animal();
 
-}
+		// member functions
+		virtual void	makeSound() const;
+		std::string	getType();
+
+};
 
 #endif

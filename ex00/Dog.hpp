@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/25 10:52:12 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/10/19 22:38:17 by cgodecke         ###   ########.fr       */
+/*   Created: 2023/10/19 22:15:36 by cgodecke          #+#    #+#             */
+/*   Updated: 2023/10/19 23:04:20 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
-#include <iostream>
-#include <fstream>
-#include "Animal.hpp"
-#include "Dog.hpp"
+#ifndef DOG_HPP
+# define DOG_HPP
 
-int main()
+#include "Animal.hpp"
+
+class Dog : public Animal
 {
-	
-	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	/*
-	const Animal* i = new Cat();
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-	i->makeSound(); //will output the cat sound!
-	j->makeSound();
-	meta->makeSound();
-*/
-	return 0;
-}
+	private:
+
+	public:
+		// constructors
+		Dog();
+		Dog(std::string type);
+		Dog(const Dog &other);
+		Dog &operator=(const Dog &other);
+		~Dog();
+
+		// member functions
+		virtual void	makeSound() const;
+};
+
+#endif
