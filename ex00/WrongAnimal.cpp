@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   WrongAnimal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,44 +10,44 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
 // constructors
-Animal::Animal() : _type("Default")
+WrongAnimal::WrongAnimal() : _type("Default")
 {
-	std::cout << "Animal default constructor called\n";
+	std::cout << "WrongAnimal default constructor called\n";
 }
 
-Animal::Animal (std::string type) : _type(type)
+WrongAnimal::WrongAnimal (std::string type) : _type(type)
 {
-	std::cout << "Animal constructor called\n";
+	std::cout << "WrongAnimal constructor called\n";
 }
 
-Animal::Animal(const Animal &other) : _type(other._type)
+WrongAnimal::WrongAnimal(const WrongAnimal &other) : _type(other._type)
 {
-	std::cout << "Animal copy constructor called\n";
+	std::cout << "WrongAnimal copy constructor called\n";
 }
 
-Animal &Animal::operator=(const Animal &other)
+WrongAnimal &WrongAnimal::operator=(const WrongAnimal &other)
 {
 	_type = other._type;
-	std::cout << "Animal copy assignment constructor called\n";
+	std::cout << "WrongAnimal copy assignment constructor called\n";
 	return (*this);
 }
 
-Animal::~Animal()
+WrongAnimal::~WrongAnimal()
 {
-	std::cout << "Animal deconstructor called\n";
+	std::cout << "WrongAnimal deconstructor called\n";
 }
 
 
 // member functions
-void Animal::makeSound() const
+void WrongAnimal::makeSound() const
 {
-	std::cout << "Animal could make several different sounds\n";
+	std::cout << "WrongAnimal could make several different sounds\n";
 }
 
-std::string Animal::getType() const
+std::string WrongAnimal::getType() const
 {
 	return (_type);
 }

@@ -1,51 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.cpp                                            :+:      :+:    :+:   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 22:21:10 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/10/20 12:30:28 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/10/20 12:30:35 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+#include "Cat.hpp"
 
 // constructors
-Dog::Dog() : Animal()
+Cat::Cat() : Animal()
 {
-	_type = "Dog";
-	std::cout << "Dog default constructor called\n";
+	_type = "Cat";
+	std::cout << "Cat default constructor called\n";
 }
 
-Dog::Dog (std::string type) : Animal(type)
+Cat::Cat (std::string type) : Animal(type)
 {
 	_type = type;
-	std::cout << "Dog constructor called\n";
+	std::cout << "Cat constructor called\n";
 }
 
-Dog::Dog(const Dog &other) : Animal(other)
+Cat::Cat(const Cat &other) : Animal(other)
 {
 	*this = other;
-	std::cout << "Dog copy constructor called\n";
+	std::cout << "Cat copy constructor called\n";
 }
 
-Dog &Dog::operator=(const Dog &other)
+Cat &Cat::operator=(const Cat &other)
 {
 	_type = other._type;
-	std::cout << "Dog copy assignment constructor called\n";
+	std::cout << "Cat copy assignment constructor called\n";
 	return (*this);
 }
 
-Dog::~Dog()
+Cat::~Cat()
 {
-	std::cout << "Dog deconstructor called\n";
+	std::cout << "Cat deconstructor called\n";
 }
 
 
 // member functions
-void Dog::makeSound() const
+void Cat::makeSound() const
 {
-	std::cout << "Wau Wau Wau\n";
+	std::cout << "Miau Miau Miau\n";
 }

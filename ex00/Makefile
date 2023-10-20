@@ -6,16 +6,18 @@
 #    By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/18 15:39:27 by cgodecke          #+#    #+#              #
-#    Updated: 2023/10/19 23:03:41 by cgodecke         ###   ########.fr        #
+#    Updated: 2023/10/20 13:53:15 by cgodecke         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 C++ = c++
 C++_FLAGS = -Wall -Wextra -Werror -g -std=c++98
 INFILES = 	Animal.cpp\
+			WrongAnimal.cpp\
 			Dog.cpp\
 			main.cpp\
-			#Cat.cpp\
+			Cat.cpp\
+			WrongCat.cpp\
 			
 OBJFILES = $(INFILES:.cpp=.o)
 

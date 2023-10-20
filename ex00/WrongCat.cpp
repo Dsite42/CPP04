@@ -1,51 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.cpp                                            :+:      :+:    :+:   */
+/*   WrongCat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 22:21:10 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/10/20 12:30:28 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/10/20 12:30:35 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+#include "WrongCat.hpp"
 
 // constructors
-Dog::Dog() : Animal()
+WrongCat::WrongCat() : WrongAnimal()
 {
-	_type = "Dog";
-	std::cout << "Dog default constructor called\n";
+	_type = "WrongCat";
+	std::cout << "WrongCat default constructor called\n";
 }
 
-Dog::Dog (std::string type) : Animal(type)
+WrongCat::WrongCat (std::string type) : WrongAnimal(type)
 {
 	_type = type;
-	std::cout << "Dog constructor called\n";
+	std::cout << "WrongCat constructor called\n";
 }
 
-Dog::Dog(const Dog &other) : Animal(other)
+WrongCat::WrongCat(const WrongCat &other) : WrongAnimal(other)
 {
 	*this = other;
-	std::cout << "Dog copy constructor called\n";
+	std::cout << "WrongCat copy constructor called\n";
 }
 
-Dog &Dog::operator=(const Dog &other)
+WrongCat &WrongCat::operator=(const WrongCat &other)
 {
 	_type = other._type;
-	std::cout << "Dog copy assignment constructor called\n";
+	std::cout << "WrongCat copy assignment constructor called\n";
 	return (*this);
 }
 
-Dog::~Dog()
+WrongCat::~WrongCat()
 {
-	std::cout << "Dog deconstructor called\n";
+	std::cout << "WrongCat deconstructor called\n";
 }
 
 
 // member functions
-void Dog::makeSound() const
+void WrongCat::makeSound() const
 {
-	std::cout << "Wau Wau Wau\n";
+	std::cout << "WrongCat Miau Miau Miau\n";
 }
