@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 10:52:12 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/10/20 21:02:42 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/03 16:56:28 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,8 +84,8 @@ int main()
 
 	{
 		std::cout << "\033[33m" << "Deep Copy Test Dog Assignment\n"<< "\033[0m";
-		Cat dog;
-		Cat assignment_dog(dog);
+		Dog dog;
+		Dog assignment_dog(dog);
 		std::cout << std::endl;
 		
 		std::cout << "This is idea 10 from dog: " << dog.getIdea(10) << std::endl;

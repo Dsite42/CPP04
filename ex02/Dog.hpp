@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 22:15:36 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/10/20 20:39:45 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/03 16:53:58 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class Dog : public AAnimal
 		Dog(std::string type);
 		Dog(const Dog &other);
 		Dog &operator=(const Dog &other);
-		~Dog();
+		virtual ~Dog();
 
 		// member functions
 		virtual void	makeSound() const;

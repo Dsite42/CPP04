@@ -30,7 +30,7 @@ class AAnimal
 
 		// member functions
 		virtual void	makeSound() const = 0;
-		std::string	getType() const;
+		std::string		getType() const;
 
 };
 
