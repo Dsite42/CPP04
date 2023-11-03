@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 10:52:12 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/10/20 14:42:38 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/03 12:59:27 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,16 +56,5 @@ int main()
 		delete i;
 	}
 	
-	{
-		std::cout << "\033[33m" << "\nWrongCat\n"<< "\033[0m";
-		WrongCat wrong_cat;
-		wrong_cat.makeSound();
-		WrongAnimal* wrong_animal = NULL;
-		wrong_animal = new WrongCat();
-		
-		std::cout << "\033[33m" << "\nWrongAnimal\n"<< "\033[0m";
-		wrong_animal->makeSound();
-		delete wrong_animal;
-	}
 	return 0;
 }

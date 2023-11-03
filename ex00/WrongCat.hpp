@@ -28,7 +28,7 @@ class WrongCat : public WrongAnimal
 		~WrongCat();
 
 		// member functions
-		virtual void	makeSound() const;
+		void	makeSound() const;
 };
 
 #endif
