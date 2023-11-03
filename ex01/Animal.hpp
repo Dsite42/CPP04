@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:54:15 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/10/20 14:38:20 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/03 16:13:44 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class Animal
 
 		// member functions
 		virtual void	makeSound() const;
-		std::string	getType() const;
+		std::string		getType() const;
 
 };
 
