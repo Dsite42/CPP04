@@ -6,12 +6,12 @@
 #    By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/18 15:39:27 by cgodecke          #+#    #+#              #
-#    Updated: 2023/11/03 10:29:09 by cgodecke         ###   ########.fr        #
+#    Updated: 2023/11/06 11:45:50 by cgodecke         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 C++ = c++
-C++_FLAGS = -Wall -Wextra -Werror -g -std=c++98
+C++_FLAGS = -Wall -Wextra -Werror -std=c++98 -pedantic
 INFILES = 	Animal.cpp\
 			WrongAnimal.cpp\
 			Dog.cpp\

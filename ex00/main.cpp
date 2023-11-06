@@ -6,13 +6,11 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 10:52:12 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/03 12:59:27 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/06 11:39:22 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string>
-#include <iostream>
-#include <fstream>
+
 #include "Animal.hpp"
 #include "Dog.hpp"
 #include "Cat.hpp"
@@ -21,7 +19,6 @@
 
 int main()
 {
-
 	{
 		std::cout << "\033[33m" << "From PDF\n"<< "\033[0m";
 		const Animal* meta = new Animal();
