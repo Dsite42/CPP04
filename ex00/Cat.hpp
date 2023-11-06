@@ -6,7 +6,7 @@
 /*   By: cgodecke <cgodecke@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 22:15:36 by cgodecke          #+#    #+#             */
-/*   Updated: 2023/11/03 11:08:34 by cgodecke         ###   ########.fr       */
+/*   Updated: 2023/11/06 09:45:13 by cgodecke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Cat : public Animal
 		Cat(std::string type);
 		Cat(const Cat &other);
 		Cat &operator=(const Cat &other);
-		~Cat();
+		virtual ~Cat();
 
 		// member functions
 		virtual void	makeSound() const;
