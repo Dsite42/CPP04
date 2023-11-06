@@ -117,15 +117,23 @@ Brain::Brain()
 	ideas[98] = "Share food with other members in an act of kindness";
 	ideas[99] = "Gather in a circle for communal rest or sleep";}
 
-Brain::Brain(const Brain &other) : ideas(other.ideas)
+Brain::Brain(const Brain &other)
 {
+	*this = other;
 	std::cout << "Brain copy constructor called\n";
 }
 
 Brain &Brain::operator=(const Brain &other)
 {
+	int i;
+
+	i = 0;
+	while (i < 100)
+	{
+		ideas[i] = other.ideas[i];
+		i++;
+	}
 	std::cout << "Brain copy assignment constructor called\n";
-	std::copy(other.ideas, other.ideas + 100, ideas);
 	return (*this);
 }
 
@@ -133,6 +141,3 @@ Brain::~Brain()
 {
 	std::cout << "Brain deconstructor called\n";
 }
-
-
-// member functions
